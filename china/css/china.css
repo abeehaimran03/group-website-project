@@ -1,0 +1,149 @@
+/* Home Page */
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, rgb(178, 178, 249), white);
+}
+
+.himages {
+    border: 1px solid white;
+    width: 290px;
+    background-color: white;
+    transition: transform .2s;
+}
+
+.himages:hover { /* I wasn't too sure how to do the zooming in on hover effect so I got it from https://www.w3schools.com/howto/howto_css_zoom_hover.asp */
+    box-shadow: 0px 0px 21px rgb(254, 254, 45);
+    -ms-transform: scale(0.9); 
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+.figcaption{
+    text-align: center;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-bottom: 2px;
+}
+
+#title{
+    text-align: center;
+}
+#text{
+    text-align: center;
+}
+
+#facts{
+    display: flex;
+    background: linear-gradient(to left, rgb(178, 178, 249), white);
+}
+
+#facts ul{
+    list-style-type: square;
+}
+
+#footer {
+    text-align: center;
+    padding-top: 2%;
+}
+/* Background Page */
+
+#background {
+    background-image: url("../images/pexels-markus-winkler.jpg");
+    background-position: center;  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.background_content {
+}
+
+#flag {
+ 
+}
+
+#background_main {
+    background: linear-gradient(to right, rgb(240, 108, 93, 0.3), rgb(198, 223, 228, 0.6));
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.spotify {
+    width: 400px;
+}
+
+/* Language Page */
+
+#lang_body {
+    background-image: url("../images/oriento-bAzDhilQFsA-unsplash.jpg");
+    background-position: center;  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#lang_main {
+    background: linear-gradient(to right, rgba(119, 58, 21, 0.3), rgb(198, 223, 228, 0.6));
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+#tones {
+
+}
+
+#sidenote {
+
+}
+
+/* Food Page */
+
+#food_body {
+    background-image: url("../images/chupanhstudio-hotpot.jpg");
+    background-position: center;  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+#food_main {
+    background: linear-gradient(to right, rgba(209, 98, 180, 0.3), rgb(198, 223, 228, 0.6));
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.food_content{
+
+}
+
+/* Tradition Page */
+
+#tradition_body {
+    background-image: url("../images/freepik-chinese-new-year.jpg");
+    background-position: center;  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+#trad_main {
+    background: linear-gradient(to right, rgba(248, 248, 47, 0.2), rgb(198, 223, 228, 0.6));
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.trad_content {
+
+}

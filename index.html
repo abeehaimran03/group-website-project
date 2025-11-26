@@ -9,6 +9,7 @@
 	<!--This means that the browser will (probably) render the width of the page at the width of its own screen. //-->
     <title> A Group Website </title>
 	<link rel="stylesheet" href="mainstyle.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet"> 
@@ -17,7 +18,6 @@
 
     <body>
         <main>
-
 	    <header> 
             <div>
                 <h1 class="title"> Our Countries </h1>
@@ -28,64 +28,47 @@
         </header>
 
         <nav class="navbar"> <!-- the navigation part of the page -->
-			<ul id="home">
-                <li><a href="index.html">Home</a></li>
+            <!-- the design of the nav bar was achieved through using bootstrap -->
+                <button type="button" class="btn btn-secondary"><a id="home" href="index.html"> Home </a></button>
+        <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="pakistan/pakistan-main.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Pakistan </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="pakistan/pak-nationalsymbols.html">National Symbols</a></li>
+                <li><a class="dropdown-item" href="pakistan/pak-language.html">Language</a></li>
+                <li><a class="dropdown-item" href="pakistan/pak-food.html">Food</a></li>
+                <li><a class="dropdown-item" href="pakistan/pak-culture.html">Culture and Tradition</a></li>
+                <li><a class="dropdown-item" href="pakistan/pak-facts.html">Interesting Facts</a></li>
             </ul>
-            <ul>
-                <li>
-                    <a class="homelink" href="pakistan/pakistan-main.html"> Pakistan </a>
-                <div class="dropdown">
-            <ul>
-                <li><a href="pakistan/pak-nationalsymbols.html">National Symbols</a></li>
-                <li><a href="pakistan/pak-language.html">Language</a></li>
-                <li><a href="pakistan/pak-food.html">Food</a></li>
-                <li><a href="pakistan/pak-culture.html">Culture and Tradition</a></li>
-                <li><a href="pakistan/pak-facts.html">Interesting Facts</a></li>
+        </div>
+        <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="china/index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> China </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="china/background.html">Background to China</a></li>
+                <li><a class="dropdown-item" href="china/language.html">Chinese Language</a></li>
+                <li><a class="dropdown-item" href="china/food.html">Chinese Foods</a></li>
+                <li><a class="dropdown-item" href="china/tradition.html">Chinese Tradition/Culture</a></li>
             </ul>
-            </div>
-            </li>
+        </div>
+        <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="ukraine/ukraine.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Ukraine </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="ukraine/ukr-national-symbols.html">National Attributes</a></li>
+                <li><a class="dropdown-item" href="ukraine/ukr-language.html">Language</a></li>
+                <li><a class="dropdown-item" href="ukraine/ukr-food.html">Cuisine</a></li>
+                <li><a class="dropdown-item" href="ukraine/ukr-culture.html">Culture</a></li>
+                <li><a class="dropdown-item" href="ukraine/ukr-facts.html">Interesting Facts</a></li>
             </ul>
-            <ul>
-                <li>
-                    <a class="homelink"href="china/index.html"> China </a>
-			<div class="dropdown">
-            <ul>
-                <li><a href="china/background.html">Background to China</a></li>
-                <li><a href="china/language.html">Chinese Language</a></li>
-                <li><a href="china/food.html">Chinese Foods</a></li>
-                <li><a href="china/tradition.html">Chinese Tradition/Culture</a></li>
-            </ul>
-            </div>
-            </li>
-            </ul>
-            <ul>
-                <li>
-                    <a class="homelink"href="ukraine/ukraine.html"> Ukraine </a>
-			<div class="dropdown">
-            <ul>
-                <li><a href="ukraine/ukr-national-symbols.html">National Attributes</a></li>
-                <li><a href="ukraine/ukr-language.html">Language</a></li>
-                <li><a href="ukraine/ukr-food.html">Cuisine</a></li>
-                <li><a href="ukraine/ukr-culture.html">Culture</a></li>
-                <li><a href="ukraine/ukr-facts.html">Interesting Facts</a></li>
-            </ul>
-            </div>
-            </li>
-            </ul>
-            <ul> <!-- put irelands index.html -->
-                <li>
-                    <a class="homelink" href="#ireland"> Ireland </a>
-			<div class="dropdown">
-            <ul>
-                <li><a href="ireland/Flag.html">Flag</a></li>
-                <li><a href="ireland/Language.html">Language</a></li>
-                <li><a href="ireland/Food.html">Food</a></li>
-                <li><a href="ireland/Culture.html">Culture and Tradition</a></li>
-                <li><a href="ireland/Holidays.html">Holidays</a></li>
+        </div> <!-- put irelands index.html -->
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#ireland" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Ireland </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="ireland/Flag.html">Flag</a></li>
+                <li><a class="dropdown-item" href="ireland/Language.html">Language</a></li>
+                <li><a class="dropdown-item" href="ireland/Food.html">Food</a></li>
+                <li><a class="dropdown-item" href="ireland/Culture.html">Irish Culture</a></li>
+                <li><a class="dropdown-item" href="ireland/Holidays.html">Holidays</a></li>
             </ul>
 			</div>
-            </li>
-            </ul>
         </nav>
 
         <div>
@@ -141,5 +124,7 @@
         <!-- Note that the link to the validator above will only produce results when your page is uploaded to the server, and you click on the link from the browser.-->
         </footer>
         </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <!-- the script is for bootstrap -->
     </body>
 </html>

@@ -1,59 +1,8 @@
 /* nav bar dropdown design */
 
-.navbar a{
+#home {
     text-decoration: none;
-}
-
-.navbar {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-} 
-
-.navbar li {
-  position: relative;
-  list-style-type: none;
-}
-
-.navbar li a {
-  padding-top: 3px;
-  display: block;
-  text-decoration: none;
-}
-
-.homelink, .navbar {
-    background-color: mediumaquamarine;
-}
-
-.navbar li a:hover {
-    background-color: lightseagreen;
-}
-.homelink, li a, .homelink a, #home a{
     color: white;
-}
-.dropdown {
-  display: none;
-  position: absolute;
-  top: 100%;
-  min-width: 100px;
-  transition: all 0.3s;
-  background: mediumaquamarine;
-  z-index: 1;
-  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.123);
-}
-
-.dropdown a {
-  display: block;
-}
-
-.navbar ul li:hover .dropdown{
-  display: block;
-  border-style: solid;
-  border-color: white;
-  border-radius: 10px;
-  box-sizing: border-box;
-  background-color: mediumaquamarine;
 }
 
 /* font */

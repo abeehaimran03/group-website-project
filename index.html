@@ -8,7 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--This means that the browser will (probably) render the width of the page at the width of its own screen. //-->
     <title> A Group Website </title>
-	<link rel="stylesheet" href="mainstyle.css" /> 
+	<link rel="stylesheet" href="mainstyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet"> 
+    <!-- font got from google fonts --> 
     </head>
 
     <body>
@@ -24,15 +28,64 @@
         </header>
 
         <nav class="navbar"> <!-- the navigation part of the page -->
-			<a href="index.html">Home</a>
-			<!-- <div class="dropdown"> -->
+			<ul id="home">
+                <li><a href="index.html">Home</a></li>
+            </ul>
             <ul>
-                <li><a href="pakistan/pakistan-main.html"> Pakistan </a></li>
-                <li><a href="china/index.html"> China </a></li>
-                <li><a href="ukraine/ukraine.html"> Ukraine </a></li>
-                <li><a href="#ireland"> Ireland </a></li>
+                <li>
+                    <a class="homelink" href="pakistan/pakistan-main.html"> Pakistan </a>
+                <div class="dropdown">
+            <ul id="pakistan">
+                <li><a href="pakistan/pak-nationalsymbols.html">National Symbols</a></li>
+                <li><a href="pakistan/pak-language.html">Language</a></li>
+                <li><a href="pakistan/pak-food.html">Food</a></li>
+                <li><a href="pakistan/pak-culture.html">Culture and Tradition</a></li>
+                <li><a href="pakistan/pak-facts.html">Interesting Facts</a></li>
+            </ul>
+            </div>
+            </li>
+            </ul>
+            <ul id="china">
+                <li>
+                    <a class="homelink"href="china/index.html"> China </a>
+			<div class="dropdown">
+            <ul id="china">
+                <li><a href="china/background.html">Background to China</a></li>
+                <li><a href="china/language.html">Chinese Language</a></li>
+                <li><a href="china/food.html">Chinese Foods</a></li>
+                <li><a href="china/tradition.html">Chinese Tradition/Culture</a></li>
+            </ul>
+            </div>
+            </li>
+            </ul>
+            <ul id="ukraine">
+                <li>
+                    <a class="homelink"href="ukraine/ukraine.html"> Ukraine </a>
+			<div class="dropdown">
+            <ul>
+                <li><a href="ukraine/ukr-national-symbols.html">National Attributes</a></li>
+                <li><a href="ukraine/ukr-language.html">Language</a></li>
+                <li><a href="ukraine/ukr-food.html">Cuisine</a></li>
+                <li><a href="ukraine/ukr-culture.html">Culture</a></li>
+                <li><a href="ukraine/ukr-facts.html">Interesting Facts</a></li>
+            </ul>
+            </div>
+            </li>
+            </ul>
+            <ul id="ireland"> <!-- put irelands index.html -->
+                <li>
+                    <a class="homelink" href="#ireland"> Ireland </a>
+			<div class="dropdown">
+            <ul>
+                <li><a href="ireland/Flag.html">Flag</a></li>
+                <li><a href="ireland/Language.html">Language</a></li>
+                <li><a href="ireland/Food.html">Food</a></li>
+                <li><a href="ireland/Culture.html">Culture and Tradition</a></li>
+                <li><a href="ireland/Holidays.html">Holidays</a></li>
             </ul>
 			</div>
+            </li>
+            </ul>
         </nav>
 
         <div>

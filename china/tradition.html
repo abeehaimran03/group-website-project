@@ -10,19 +10,21 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet"> 
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body id="tradition_body">
    <header>
       <nav class="navbar">
-         <div class="navcontents"> <!-- design div ie contents inside this-->
-            <ul class="pages">
-               <li><a href="group-website-project/index.html">Home Page</a></li>
-               <li><a href="index.html" class="link">Introduction to China</a></li>
-               <li><a href="background.html" class="link">Background to China</a></li>
-               <li><a href="language.html" class="link">Chinese Language</a></li>
-               <li><a href="food.html" class="link">Chinese Foods</a></li>
-               <li><a href="tradition.html" class="link">Chinese Tradition/Culture</a></li>
+        <a id="mainhmpg" href="../index.html" class="btn btn-secondary">Home Page</a>
+         <div class="dropdown-center">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> China </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../china/index.html">China's Home Page</a></li>
+                <li><a class="dropdown-item" href="../china/background.html">Background to China</a></li>
+                <li><a class="dropdown-item" href="../china/language.html">Chinese Language</a></li>
+                <li><a class="dropdown-item" href="../china/food.html">Chinese Foods</a></li>
+                <li><a class="dropdown-item" href="../china/tradition.html">Chinese Tradition/Culture</a></li>
             </ul>
          </div>
       </nav>
@@ -84,5 +86,6 @@
 			</p>
 </footer>
 </main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

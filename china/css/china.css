@@ -2,26 +2,29 @@
 
 #mainhmpg {
     text-decoration: none;
-    color: white;
-    justify-content: center; 
+    color: white; 
+    margin-left: 200px;
+}
+
+.dropdown-center {
+    margin-right: 200px;
 }
 
 .gallery {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background: linear-gradient(to right, rgb(178, 178, 249), white);
 }
 
 .himages {
     border: 1px solid white;
     width: 290px;
-    background-color: white;
+    background-color: rgba(188, 124, 21, 0.653);
     transition: transform .2s;
 }
 
-.himages:hover { /* I wasn't too sure how to do the zooming in on hover effect so I got it from https://www.w3schools.com/howto/howto_css_zoom_hover.asp */
-    box-shadow: 0px 0px 21px rgb(254, 254, 45);
+.himages:hover { 
+    box-shadow: 0px 0px 30px rgb(81, 81, 79);
     -ms-transform: scale(0.9); 
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
@@ -35,6 +38,7 @@
 
 #title{
     text-align: center;
+    font-weight: bold;
 }
 #text{
     text-align: center;
@@ -42,7 +46,6 @@
 
 #facts{
     display: flex;
-    background: linear-gradient(to left, rgb(178, 178, 249), white);
 }
 
 #facts ul{
@@ -52,6 +55,55 @@
 #footer {
     text-align: center;
     padding-top: 2%;
+}
+
+/* Interesting Facts Section */
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-top: 24px;
+    width: 90%;
+    justify-self: center;
+}
+
+.fact-card {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #f7f7f7;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+    min-height: 130px;
+}
+
+.fact-card h3 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    font-weight: bold;
+}
+
+.fact-card p {
+    position: absolute;
+    inset: 0;             
+    opacity: 0;             
+    margin: 0;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    transition: opacity 0.28s;
+    background: white;
+}
+
+.fact-card:hover p {
+    opacity: 1;
 }
 
 /* Background Page */

@@ -24,11 +24,27 @@ p, h1, h2, h3, h4, h5, h6, li {
 /* contact page */
 
 .contact-us {
-    text-align: left;
+    text-align: center;
     padding: 40px 0px 40px 0px;
-    width: 10%;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    text-align: center;
 }
 
 .contact-form, .reflection li{
     font-family: 'Quicksand', sans-serif;
+}
+
+.box {
+    margin: 10px 0px 20px 0px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 270px;
+}
+
+#inquiry {
+    border-radius: 5px;
 }

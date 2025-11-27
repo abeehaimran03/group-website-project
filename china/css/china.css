@@ -1,5 +1,18 @@
 /* Home Page */
 
+#headertitle {
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+header{
+    max-width: 90%;
+    padding-bottom: 30px;
+    margin: 0 auto 40px;
+}
+
 #mainhmpg {
     text-decoration: none;
     color: white; 
@@ -117,10 +130,7 @@
 }
 
 .background_content {
-}
-
-#flag {
- 
+    
 }
 
 #background_main {
@@ -153,12 +163,12 @@
     padding: 2%;
 }
 
-#tones {
-
+.lang_content p, .lang_content li {
+    color: white;
 }
 
-#sidenote {
-
+#tones {
+    color: rgb(255, 155, 139);
 }
 
 /* Food Page */
@@ -180,8 +190,8 @@
     padding: 2%;
 }
 
-.food_content{
-
+.food_content p, .food_content li {
+    color: white;
 }
 
 /* Tradition Page */
@@ -203,6 +213,6 @@
     padding: 2%;
 }
 
-.trad_content {
-
+.trad_content p, .trad_content li {
+    color: white;
 }

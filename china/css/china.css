@@ -1,17 +1,9 @@
 /* Home Page */
 
-body {
-    font-family: quicksand, sans-serif;
-}
-
 #mainhmpg {
     text-decoration: none;
     color: white;
-    margin-left: 150px; 
-}
-
-.dropdown-center {
-    margin-right: 150px;
+    justify-content: center; 
 }
 
 .gallery {

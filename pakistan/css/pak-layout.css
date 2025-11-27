@@ -1,0 +1,58 @@
+/* I got some CSS material from W3Schools: https://www.w3schools.com/css/default.asp */
+
+body {
+    background-color: white;  /* overall website background colour */  
+}
+
+/* site title styling */
+.title {
+  color: #06402B;               /* text color */
+  text-align: left;               /* centers the title */
+  font-family: 'Fantasy';         /* changes font */
+}
+
+.title-section {
+  display: inline-block;  /* Makes the block only as wide as the title/slogan */
+  text-align: center;     /* Centers the slogan TO the block */
+  margin-left: 20px;      /* Keeps the whole block left-aligned on the page */
+}
+
+.title-section h1 {
+  text-align: left;       /* Title stays left inside the block */
+  margin: 0;              /* Removes spacing so slogan sits right under */
+}
+
+/* slogan stying */
+.slogan {
+  color: #06402B;               /* text color */
+  text-align: center;            /* centers the slogan */
+  font-weight: bold;              /* makes text bold */
+  font-style: italic;             /* makes text italic */
+  font-size: 22px;                /* makes text bigger */
+  margin: 0;                      /* removes spacing */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* title left, nav right */
+  align-items: center;            /* keeps them on the same level */
+  padding: 10px 20px;
+}
+
+.navbar ul {
+  list-style: none;               /* removes bullet points */
+  display: flex;                  /* horizontal layout */
+  gap: 20px;                      /* space between links */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #06402B;                  
+  font-size: 15px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}

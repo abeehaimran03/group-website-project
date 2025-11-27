@@ -11,32 +11,39 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet"> 
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+   <style>  
+      h1, h2 {
+         color: black;
+      }
+   </style> <!-- inline css for header colours-->
 </head>
 
 <body id="lang_body">
-  <header>
-   <div id="headertitle">
-      <h1><strong>Chinese Language</strong></h1>
-   </div>
-   <hr>
-    <nav class="navbar">
-      <a id="mainhmpg" href="../index.html" class="btn btn-secondary">Home Page</a>
-         <div class="dropdown-center">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> China </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../china/index.html">China's Home Page</a></li>
-                <li><a class="dropdown-item" href="../china/background.html">Background to China</a></li>
-                <li><a class="dropdown-item" href="../china/language.html">Chinese Language</a></li>
-                <li><a class="dropdown-item" href="../china/food.html">Chinese Foods</a></li>
-                <li><a class="dropdown-item" href="../china/tradition.html">Chinese Tradition/Culture</a></li>
+  <div class="header-nav">
+   <header>
+      <div class="header-left-top">
+                <div class="logo">
+                <img src="../china/images/vecteezy_chinese_flag.png" alt="China's Flag" width="120" height="80"> <!-- got the image from https://www.worldometers.info/img/flags/ch-flag.gif -->
+                </div>
+                <div id="headertitle">
+                <h1><strong>Chinese Language</strong></h1>
+                </div>
+            </div>
+        </header>
+            <nav class="navbar"> 
+            <ul>
+                <li><a href="../index.html">Home Page</a></li>
+                <li><a href="../china/index.html">China's Home Page</a></li>
+                <li><a href="../china/background.html">National Symbols</a></li>
+                <li><a href="../china/language.html">Language</a></li>
+                <li><a href="../china/food.html">Food</a></li>
+                <li><a href="../china/tradition.html">Tradition/Culture</a></li>
             </ul>
-         </div>
-    </nav>
-  </header>
+        </nav>
+    </div>
 <main id="lang_main">
 
  <section class="lang_content">
-   <hr>
    <h1>Mandarin</h1>
    <hr>
     <p>Most people in China speak Mandarin. 
@@ -53,21 +60,21 @@
     </section>
 
  <article>
-    <hr>
-    <p><strong>The 4 tones are:</strong></p> <!-- change p tags, too many-->
-    <hr>
+    <section>
+    <h2>The 4 tones are:</h2>
+    </section>
+    <section>
     <ol id="tones">
     <li>High-level tone</li>
     <li>High-rising tone</li>
     <li>Falling-rising tone</li>
     <li>Falling tone</li>
-</ol>
+    </ol>
+    </section>
 </article>
 
 <section class="lang_content">
-   <hr>
-  <p><strong>Only vowels have tones, while consonants do not.</strong></p> <!-- change -->
-  <hr>
+  <p><strong>Only vowels have tones, while consonants do not.</strong></p>
   <ol>
     <li>Has a horizontal line on top of the pinyin vowel, known as a macron (ˉ) e.g. ā ē ê̄ ī ō ū ǖ Ā Ē Ê̄ Ī Ō Ū Ǖ.</li>
     <li>Has a diagonal line from right to left on top of the pinyin vowel, known as an acute accent (ˊ) e.g. á é ế í ó ú ǘ Á É Ế Í Ó Ú Ǘ.</li>

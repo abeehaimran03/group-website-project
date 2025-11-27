@@ -20,3 +20,15 @@ p, h1, h2, h3, h4, h5, h6, li {
 #footer-layout {
     text-align: center;
 }
+
+/* contact page */
+
+.contact-us {
+    text-align: left;
+    padding: 40px 0px 40px 0px;
+    width: 10%;
+}
+
+.contact-form, .reflection li{
+    font-family: 'Quicksand', sans-serif;
+}

@@ -47,7 +47,7 @@
 .navbar ul li a, .navbar ul {
     text-decoration: none;
     list-style-type: none;
-    color: #000fff;
+    color: #ff2f00;
 }
 
 .navbar ul li a:hover {
@@ -74,7 +74,7 @@
 .himages {
     border: 1px solid white;
     width: 290px;
-    background-color: rgba(255, 255, 255, 0.653);
+    background-color: rgba(206, 175, 20, 0.653);
     transition: transform .3s, box-shadow .3s;
 }
 
@@ -126,7 +126,7 @@
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    background: #f7f7f7;
+    background: rgba(206, 175, 20, 0.653);
     box-shadow: 0 3px 8px rgba(0,0,0,0.06);
     min-height: 130px;
 }
@@ -152,7 +152,7 @@
     justify-content: center;
     text-align: justify;
     transition: opacity 0.28s;
-    background: white;
+    background: rgb(232, 223, 223);
 }
 
 .fact-card:hover p {
@@ -161,33 +161,67 @@
 
 /* Background Page */
 
-#background {
+/* #background {
     background-image: url("../images/pexels-markus-winkler.jpg");
     background-position: center;  
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; 
+} */
+
+.background_content {
+    display: table-cell;
+    grid-template-columns: 2fr 2fr 2fr;
 }
 
-.background_content p {
-    color: #ffffff;
+.background_p {
+    padding: 30px;
 }
 
-#background_main {
+.background_content h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.background_content img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.background_content img:hover {
+    transform: scale(1.1);
+}
+
+.subtitle {
+    text-align: center;
+    border-radius: 50%;
+}
+
+.title {
+    border-left: 5px solid #ff2f00;
+
+}
+/* #background_main {
     background: linear-gradient(to right, rgb(240, 108, 93, 0.3), rgb(198, 223, 228, 0.6));
     border-style: solid;
     border-color: white;
     border-radius: 10px;
-    padding: 2%;
-}
+    padding: 2%; 
+} */
 
 .spotify {
-    width: 400px;
+    width: 600px;
+    margin-left: 30px;
 }
 
 /* Language Page */
 
-#lang_body {
+/*#lang_body {
     background-image: url("../images/oriento-bAzDhilQFsA-unsplash.jpg");
     background-position: center;  
     background-size: cover;
@@ -200,43 +234,85 @@
     border-style: solid;
     border-color: white;
     border-radius: 10px;
-    padding: 2%;
+    padding: 2%; 
+} */
+
+#lang_main h1 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#lang_main { 
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    padding: 1px;
+    gap: 10px;
+    grid-template-areas: "mandarin tones" "mandarin vowels";
+}
+
+.lang_content {
+    grid-area: mandarin;
+}
+
+.tones_content {
+    grid-area: tones;
+}
+
+.vowels_content {
+    grid-area: vowels;
 }
 
 .lang_content p, .lang_content li {
-    color: white;
 }
 
 #tones {
-    color: rgb(255, 255, 255);
 }
 
 /* Food Page */
 
-#food_body {
-    background-image: url("../images/chupanhstudio-hotpot.jpg");
-    background-position: center;  
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-}
-
-#food_main {
-    background: linear-gradient(to right, rgba(209, 98, 180, 0.3), rgb(198, 223, 228, 0.6));
-    border-style: solid;
-    border-color: white;
+.food-box {
     border-radius: 10px;
-    padding: 2%;
+    border: 1px solid rgb(185, 47, 47);
+    overflow: hidden;
+    padding: 1rem;
+    text-align: left;
+    max-width: 600px;
+    margin: 2rem auto;
 }
 
-.food_content p, .food_content li {
-    color: white;
+.food-box:hover {
+    box-shadow: 0 2px 8px rgb(173, 38, 38);
+}
+
+.food-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.box-title {
+    margin: 0.5rem 0;
+    font-size: 2rem;
+}
+
+.box-content {
+    line-height: 1.4;
+    font-size: 1rem;
+    color: rgb(150, 150, 149);
+}
+
+.food_content h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
 }
 
 /* Tradition Page */
 
-#tradition_body {
+/*#tradition_body {
     background-image: url("../images/freepik-chinese-new-year.jpg");
     background-position: center;  
     background-size: cover;
@@ -251,8 +327,13 @@
     border-color: white;
     border-radius: 10px;
     padding: 2%;
-}
+} */
 
 .trad_content p, .trad_content li {
-    color: white;
+}
+
+/* Footer */
+
+.footer {
+    text-align: center;
 }

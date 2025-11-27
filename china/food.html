@@ -10,12 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet"> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <style>
-      h1, h2 {
-         color: black;
-      }
-   </style>    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">   
 </head>
 
 <body id="food_body">
@@ -33,10 +28,9 @@
             <nav class="navbar"> 
             <ul>
                 <li><a href="../index.html">Home Page</a></li>
-                <li><a href="../china/index.html">China's Home Page</a></li>
                 <li><a href="../china/background.html">National Symbols</a></li>
                 <li><a href="../china/language.html">Language</a></li>
-                <li><a href="../china/food.html">Food</a></li>
+                <li><a href="../china/index.html">China's Home Page</a></li>
                 <li><a href="../china/tradition.html">Tradition/Culture</a></li>
             </ul>
         </nav>
@@ -44,8 +38,60 @@
 <main id="food_main">
     <section class="food_content">
     <h1>Types of Meals</h1>
-    <hr>
-    <h2>Breakfast:</h2> <!-- Information on breakfast was got from https://www.chinahighlights.com/travelguide/article-what-chinese-eat-for-breakfast.htm -->
+    <div class="food-box">
+        <img class="food-image" src="../china/images/youtiao-www.duitang.com.jpeg" alt="Deep-fried dough sticks and soya milk">  <!-- Image got from https://www.duitang.com/blog/?id=1356291785 -->
+    <h2 class="box-title">Breakfast:</h2> <!-- Information on breakfast was got from https://www.chinahighlights.com/travelguide/article-what-chinese-eat-for-breakfast.htm -->
+    <p class ="box-content">
+        Most common meal is deep-fried dough sticks (yóutiáo) served with soya milk. (dòujiāng) 
+        Deep-fried dough sticks are made of flour, knead into dough, and fried in oil until crispy and golden in colour. 
+        Soya milk is made from soya beans.             
+        Often, Chinese people would dip yóutiáo into their soya milk as this gives the yóutiáo a sweet taste and slightly softer texture.
+    </p>
+    </div>
+    
+    <div class="food-box">
+        <img class="food-image" src="../china/images/hotpot-for-one_www.bing.com.jpeg" alt="Hot Pot for One"> <!-- Image got from  -->
+    <h2 class="box-title">Lunch:</h2>   <!-- Informaton on lunch was got from https://www.chinaxiantour.com/travel-guide/chinese-lunch-dishes -->
+    <p class ="box-content">
+        Chinese people consume rice or noodles for lunch.
+        Other than that they also eat a dish called “Hot Pot for One” (mào cài). 
+        This is simply where the person chooses the ingredients they'd like e.g. tofu, meat products, mushrooms etc., and put them in a bamboo basket, and cook them in a spicy broth.
+    </p>
+    </div>
+
+    <div class="food-box">
+        <img class="food-image" src="../china/images/hotpot-www.bing.com.jpeg" alt="Hot Pot"> <!-- Image got from https://uk.lkk.com/culinary-guide/all/simple-chinese-hot-pot -->
+    <h2 class="box-title">Dinner:</h2>   <!-- Information on Dinner was got from https://dishpairing.com/what-do-chinese-eat-for-breakfast-lunch-and-dinner/#Dinner_The_Main_Meal_of_the_Day -->
+    <p class ="box-content">
+        Hot Pot is a popular choice. 
+        Chinese people gather and cook their meats and vegetables in a simmering pot. 
+        The soup base differs depending on the group's taste. 
+        It can either be spicy or very mild.
+    </p>
+    </div>
+
+    <div class="food-box">
+        <img class="food-image" src="../china/images/glutinous-rice-balls_www.today.com.my.jpeg" alt="Glutinous Rice Balls"> <!-- Image got from https://www.today.com.my/product/glutinous-rice-ball/ -->
+    <h2 class="box-title">Dessert:</h2>   
+    <p class ="box-content">
+        Glutinous rice balls (tāngyuán) are akin to mochis. 
+        The texture is chewy, and they contain sweet fillings e.g. peanut, or black sesame. 
+        They are best served hot in a sweet broth <em>(which is usually merely hot water with sugar added to flavour the soup)</em>.<!-- Got this information from https://insanelygoodrecipes.com/chinese-desserts/ --> 
+    </p>
+    </div>
+
+    <div class="food-box">
+        <img class="food-image" src="../china/images/stinkytofu_www.bing.com.jpeg" alt="Stinky Tofu"> <!-- Image got from https://jingyan.baidu.com/showlist/detail/91f5db1bf751c01c7e05e35e -->
+    <h2 class="box-title">Streetfood:</h2>   
+    <p class ="box-content">
+        Stinky tofu (chòu dòufu) is a very controversial street food. 
+        Some Chinese people love them while some can't stand the smell. 
+        It is a fermented tofu that has a crispy, black skin with a strong odour.
+    </p>
+    </div>
+    </section>
+
+    <!-- <h2>Breakfast:</h2> Information on breakfast was got from https://www.chinahighlights.com/travelguide/article-what-chinese-eat-for-breakfast.htm 
     <hr>
     <p>There is a wide variety of breakfast food in China.</p>
     <ul>
@@ -65,8 +111,9 @@
         </li>
     </ul>
     </section>
-    <section class="food_content">
-    <h2>Lunch:</h2> <!-- Informaton on lunch was got from https://www.chinaxiantour.com/travel-guide/chinese-lunch-dishes -->
+    <section class="food_content"> 
+
+    <h2>Lunch:</h2> Informaton on lunch was got from https://www.chinaxiantour.com/travel-guide/chinese-lunch-dishes
     <hr>
     <ul>
         <li>Certainly, you would expect a Chinese person to consume rice or noodles for lunch.</li>
@@ -75,7 +122,7 @@
     </ul>
     </section>
     <section class="food_content">
-    <h2>Dinner:</h2> <!-- Information on Dinner was got from https://dishpairing.com/what-do-chinese-eat-for-breakfast-lunch-and-dinner/#Dinner_The_Main_Meal_of_the_Day -->
+    <h2>Dinner:</h2> Information on Dinner was got from https://dishpairing.com/what-do-chinese-eat-for-breakfast-lunch-and-dinner/#Dinner_The_Main_Meal_of_the_Day
     <hr>
     <ul>
         <li>Hot Pot is a popular choice for dinner. 
@@ -92,10 +139,10 @@
     <hr>
     <ul>
         <li>Dim sum (morning tea) isn't a dish, albeit its name is associated with having breakfast. 
-            The dishes, e.g. buns, shrimp dumplings, pastries, or steamed vermicelli rolls, are served in steamer baskets or sometimes on small plates and are accompanied by tea.</li> <!-- Information on this part got from https://www.chinahighlights.com/travelguide/article-what-chinese-eat-for-breakfast.html -->
+            The dishes, e.g. buns, shrimp dumplings, pastries, or steamed vermicelli rolls, are served in steamer baskets or sometimes on small plates and are accompanied by tea.</li> Information on this part got from https://www.chinahighlights.com/travelguide/article-what-chinese-eat-for-breakfast.html 
         <li>Glutinous rice balls (tāngyuán) are akin to mochis. 
             The texture is chewy, and they contain sweet fillings e.g. peanut, or black sesame. 
-            They are best served hot in a sweet broth <em>(which is usually merely hot water with sugar added to flavour the soup)</em>.</li> <!-- Got this information from https://insanelygoodrecipes.com/chinese-desserts/ -->
+            They are best served hot in a sweet broth <em>(which is usually merely hot water with sugar added to flavour the soup)</em>.</li>  Got this information from https://insanelygoodrecipes.com/chinese-desserts/ 
     </ul>
     </section>
     <section class="food_content">
@@ -110,7 +157,8 @@
             They are then coated with caramelised sugar and left to cool. 
             This forms a crispy sugar coat covering the fruit. </li>
     </ul>
-    </section>
+    </section> -->
+
    <footer id = "footer">
               <p> &copy; <a href="dcu.ie/">DCU 2025-2026</a>
 				<span>|</span>

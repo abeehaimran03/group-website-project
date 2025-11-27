@@ -5,25 +5,38 @@
         <meta name="China" content="Information about China"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>China</title>
+        <link rel="stylesheet" href="mainstyle.css"/>
         <link rel="stylesheet" href="css/china.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet"> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     </head>
 
-    <body> <!-- design navbar, need to be similar to teammates one-->
+    <body>
        <main>
         <header>
-            <nav class="navbar">
-               <div class="navcontents"> <!-- design div ie contents inside this-->
-                 <ul class="pages">
-                 <li><a href="index.html" class="link">Introduction to China</a></li>
-                 <li><a href="background.html" class="link">Background to China</a></li>
-                 <li><a href="language.html" class="link">Chinese Language</a></li>
-                 <li><a href="food.html" class="link">Chinese Foods</a></li>
-                 <li><a href="tradition.html" class="link">Chinese Tradition/Culture</a></li>
-               </ul>
-             </div>
+            <div id="headertitle">
+                <h1><strong>China</strong></h1>
+            </div>
+            <hr>
+            <div class="logo">
+                <img src="../china/images/vecteezy_chinese_flag.png" alt="China's Flag" width="120" height="80"> <!-- got the image from https://www.worldometers.info/img/flags/ch-flag.gif -->
+            </div>
+            <nav class="navbar"> <!-- the navigation part of the page -->
+                <a id="mainhmpg" href="../index.html" class="btn btn-secondary">Home Page</a>
+               <div class="dropdown-center">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> China </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../china/index.html">China's Home Page</a></li>
+                <li><a class="dropdown-item" href="../china/background.html">Background to China</a></li>
+                <li><a class="dropdown-item" href="../china/language.html">Chinese Language</a></li>
+                <li><a class="dropdown-item" href="../china/food.html">Chinese Foods</a></li>
+                <li><a class="dropdown-item" href="../china/tradition.html">Chinese Tradition/Culture</a></li>
+            </ul>
+        </div>
             </nav>
         </header>
-            <hr>
         <section>
             <h1 id="title">Curious about China?</h1>
         </section>
@@ -63,28 +76,49 @@
         <p id="text">Look no more, this is <strong>your</strong> guide to China!</p>
         </div>
         <hr>
-        <section id="facts">
-            <h2>Interesting Facts about China:</h2> <!-- design as a separate box or smth? insert image -->
-            <ul>
-                <li>You can purchase green-bean flavoured ice pops in China.</li>
-                <li>If all of China's railway lines were put together it would wrap around Earth twice.</li>
-                <li>Chopsticks were originally utilised for cooking, not for eating.</li>
-                <li>Half of all pigs on Earth are situated in China.</li>
-                <li>China's pandas are excellent swimmers.</li>
-            </ul>
+        <section>
+            <h2>Interesting Facts about China</h2>
+            <div class="facts-grid"> 
+            <div class="fact-card">
+                <h3>Ice Pop</h3>
+                <p>You can purchase green-bean flavoured ice pops in China.</p>
+            </div>
+
+            <div class="fact-card">
+                <h3>Train track</h3>
+                <p>If all of China's railway lines were put together it would wrap around Earth twice.</p>
+            </div>
+
+            <div class="fact-card">
+                <h3>Chopsticks</h3>
+                <p>Chopsticks were originally utilised for cooking, not for eating.</p>
+            </div>
+            
+            <div class="fact-card">
+                <h3>Pigs</h3>
+                <p>Half of all pigs on Earth are situated in China.</p>
+            </div>
+
+            <div class="fact-card">
+                <h3>Pandas</h3>
+                <p>China's pandas are excellent swimmers.</p>
+            </div>
+            </div>
         </section>
+        <hr>
         <footer id = "footer">
               <p> &copy; <a href="dcu.ie/">DCU 2025-2026</a>
-				<span>&middot;</span>
+				<span>|</span>
 				<span>Xin Yi Chen</span> 
-				<span>&middot;</span> 
+				<span>|</span> 
 				<span>This is student coursework</span> 
-				<span>&middot;</span>
+				<span>|</span>
 				<span>Lecturer<a href="http://www.computing.dcu.ie/~jkernan"> Jane Kernan</a></span> 
-				<span>&middot;</span> 
+				<span>|</span> 
 				<span><a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a><br/></span> 
-			</p>
+			  </p>
         </footer>
       </main>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     </body>
 </html>

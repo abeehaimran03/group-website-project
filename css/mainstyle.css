@@ -67,10 +67,10 @@
 
 .countries {
     display: grid;
+    max-width: 1200px;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 40px;
     padding: 40px;
-    max-width: 1200px;
     margin: auto;
 }
 
@@ -97,8 +97,7 @@ section:hover {
 }
 
 img {
-    width: 100%;
-    height: auto;
+    object-fit: cover;
 }
 
 /* font */

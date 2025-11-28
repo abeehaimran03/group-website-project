@@ -11,17 +11,18 @@ body {
   font-family: 'Fantasy';         /* changes font */
 }
 
+/* title section */
 .title-section {
-  display: inline-block;  /* Makes the block only as wide as the title/slogan */
-  text-align: center;     /* Centers the slogan TO the block */
-  margin-left: 20px;      /* Keeps the whole block left-aligned on the page */
+  display: inline-block;          /* makes the block only as wide as the title/slogan */
+  margin-left: 20px;              /* keeps the whole block left-aligned on the page */
 }
 
 .title-section h1 {
-  text-align: left;       /* Title stays left inside the block */
-  margin: 0;              /* Removes spacing so slogan sits right under */
+  text-align: left;               /* title stays left inside the block */
+  margin: 0;                      /* removes spacing so slogan sits right under */
 }
 
+/* title and navbar section */
 .header {
   display: flex;
   justify-content: space-between; /* title left, nav right */
@@ -30,76 +31,81 @@ body {
   padding-top: 25px;
 }
 
+/* navbar styling */
 .navbar ul {
   list-style: none;               /* removes bullet points */
   display: flex;                  /* horizontal layout */
   gap: 20px;                      /* space between links */
   margin: 0;
-  padding: 0;
+  padding: 0;                     /* adds space */
 }
 
 .navbar a {
-  text-decoration: none;
-  color: #06402B;                  
-  font-size: 15px;
+  text-decoration: none;          /* removes default underline */
+  color: #06402B;               /*text colour */      
+  font-size: 15px;                /* smaller text size */
 }
 
 .navbar a:hover {
-  text-decoration: underline;
-  color: #ffd700; /* gold for hover */
+  text-decoration: underline;     /* underline on hover */
+  color: #ffd700;               /* change to gold colour on hover */
 }
 
+/* pakistan introduction section */
 .pak-introduction {
-  display: flex;            /* side-by-side layout */
-  gap: 20px;                /* space between columns */
-  align-items: flex-start;  /* align top of columns */
-  flex-wrap: wrap;          /* wrap on smaller screens */
+  display: flex;                  /* side-by-side layout */
+  gap: 20px;                      /* space between columns */
+  align-items: flex-start;        /* align top of columns */
+  flex-wrap: wrap;                /* wrap on smaller screens */
 }
 
 .intro-text h2 {
   margin-left: 0 0 10px 0;       /* removes default indent */
-  padding-left: 40px;
-  color:#06402B;
+  padding-left: 40px;            /* title slightly right to match text position */
+  color:#06402B;               /* text colour */
 }
 
 .intro-text {
-  flex: 1;                  /* take available space */
+  flex: 1;                       /* take available space */
 }
 
 .intro-text ul {
-  list-style: none;               /* removes bullet points */
+  list-style: none;              /* removes bullet points */
 }
 
+/* border picture in introduction section */
 .border-pic {
-  flex: 1;                  /* take available space */
-  text-align: center;       /* center image and caption */
+  flex: 1;                       /* take available space */
+  text-align: center;            /* center image and caption */
 }
 
 .border-pic img {
-  max-width: 100%;          /* responsive image */
-  height: auto;             /* maintain aspect ratio */
-  display: block;           /* remove inline spacing */
-  margin: 0 auto;           /* center horizontally */
+  max-width: 100%;               /* responsive image */
+  height: auto;                  /* maintain aspect ratio */
+  display: block;                /* remove inline spacing */
+  margin: 0 auto;                /* center horizontally */
 }
 
+/* picture caption */
 .border-pic-caption {
   margin-top: 8px;
-  font-style: italic;
-  color: black;
-  text-align: center;       /* makes caption perfectly centered */
+  font-style: italic;            /* font style */
+  color: black;                /* font colour */
+  text-align: center;            /* makes caption perfectly centered */
 }
 
+/* horizontal line divider */
 .divider {
-  height: 1px;              /* thickness */
-  width: 100%;              /* full width */
-  background-color: #000;   /* line color */
-  margin: 30px 0;           /* spacing */
+  height: 1px;                   /* thickness */
+  width: 100%;                   /* full width */
+  background-color: #000;      /* line color */
+  margin: 30px 0;                /* spacing */
 }
 
 
-/* Main Page Section Cards */
+/* main page section cards */
 .pak-sections {
-    display: flex;
+    display: flex;              
     flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
@@ -108,36 +114,37 @@ body {
 
 .pak-card {
     width: 45%;                   /* half width look */
-    max-width: 350px;
-    text-align: center;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+    max-width: 350px;             /* card size */
+    text-align: center;           /* centre text */
+    text-decoration: none;        
+    color: black;               /* text colour */
+    font-weight: bold;            /* bold text */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Image Styling */
+/* card image styling */
 .pak-card img {
-    width: 100%;
-    height: 220px;           /* uniform height */
-    object-fit: cover;       /* crops the image so no empty space */
-    border-radius: 10px;
-    transition: transform 0.3s ease;
+    width: 100%;                  /* make image fill card width *?
+    height: 220px;                /* uniform height */
+    object-fit: cover;            /* crops the image so no empty space */
+    border-radius: 10px;          /* rounded corners */
+    transition: transform 0.3s ease;  
 }
 
-/* Caption under image */
+/* caption under image */
 .pak-caption {
     margin-top: 10px;
     font-size: 1em;
 }
 
-/* Hover Effects */
+/* hover effects */
 .pak-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 18px rgba(0,0,0,0.2);
+    transform: translateY(-5px);    /* card moves slightly upward */
+    box-shadow: 0 10px 18px rgba(0,0,0,0.2);    /* stronger shadow */
 }
 
-.pak-card:hover img {
+/* hover effect on image */
+.pak-card:hover img {               /* gentle zoom in */
     transform: scale(1.05);
 }
 
@@ -147,7 +154,7 @@ body {
   padding: 15px;                     /* vertical and horizontal padding */
   font-family: Arial, sans-serif;    /* font */
   font-size: 14px;                   /* small text size for footer */
-  color: black;                  /* text colour */
+  color: black;                    /* text colour */
 }
 
 #footer-layout a {
@@ -158,9 +165,10 @@ body {
 /* hover effect on footer links */
 #footer-layout a:hover {
   text-decoration: underline;        /* adds underline on hover */
-  color: #ffd700;
+  color: #ffd700;                  /* gold colour on hover */
 }
 
+/* footer seperators */
 .footer-separator {
   margin: 0 8px;                     /* adds horizontal spacing around seperator */
   color: black;
@@ -170,10 +178,10 @@ body {
 
 .facts-titles {
     padding-left: 30px;
-    color: #06402B;
+    color: #06402B;                /* dark green headings */
 }
 
-/* GRID OF FACT CARDS */
+/* grid of fact cards */
 .facts-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -183,16 +191,18 @@ body {
     justify-self: center;
 }
 
+/* individual fact card */
 .fact-card {
     width: 100%;
     position: relative;
-    overflow: hidden;
+    overflow: hidden;                  /* hide p text until hover */
     border-radius: 10px;
     background: #f7f7f7;
     box-shadow: 0 3px 8px rgba(0,0,0,0.06);
     min-height: 130px;
 }
 
+/* title text inside the card */
 .fact-card h3 {
     margin: 0;
     display: flex;
@@ -202,33 +212,36 @@ body {
     height: 100%;
 }
 
+/* hidden paragraphs overlay */
 .fact-card p {
     position: absolute;
-    inset: 0;                  /* makes the element occupy the whole block */
-    opacity: 0;                /* makes the element invisible */
+    inset: 0;                         /* makes the element occupy the whole block */
+    opacity: 0;                       /* makes the element invisible */
     margin: 0;
     padding: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: justify;
-    transition: opacity 0.28s;
+    transition: opacity 0.28s;        /* fade in effects */
     background: #fff;
 }
 
+/* when hovered, reveal text */
 .fact-card:hover p {
     opacity: 1;
 }
 
 
-/* FACTS GALLERY */
+/* facts gallery */
 .gallery-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;                 /* allow wrapping on small screens */
     justify-content: center;
     gap: 30px;
 }
 
+/* each figure block */
 .gallery-container figure {
     width: 280px;
     display: flex;
@@ -241,6 +254,7 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* images + videos inside figure */
 .gallery-container img,
 .gallery-container iframe {
     border-radius: 8px;
@@ -251,6 +265,7 @@ body {
     padding: 0 18px;
 }
 
+/* zoom effect on hover */
 .gallery-container figure:hover {
     transform: scale(1.05);
     box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
@@ -262,6 +277,7 @@ body {
     display: block;
 }
 
+/* caption styling */
 .gallery-container figure figcaption {
     text-align: center;
     padding: 10px;
@@ -273,7 +289,7 @@ body {
     border-radius: 0 0 10px 10px;
 }
 
-/* ADAPTIVITY */
+/* adaptivity */
 @media (max-width: 900px) {
     .homepage-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -321,13 +337,15 @@ body {
     }
 }
 
+/* remove bullet points in general lists */
 .list ul{
     list-style: none;               /* removes bullet points */
 }
-/* national symols */
 
-/* ASIDE SECTIONS */
-/* General & Aside Section Text*/
+/* national symbols */
+
+/* aside sections */
+/* general & aside section text*/
 .aside-section {
     display: flex;
     justify-content: center;
@@ -339,6 +357,7 @@ body {
     max-width: min(50%, 600px);
 }
 
+/* text side of aside sections */
 .section-paragraphs {
     display: flex;
     flex-direction: row;
@@ -354,7 +373,7 @@ body {
     font-size: larger;
 }
 
-/* Aside elements*/
+/* aside elements*/
 .aside-section aside {
     flex: 1;
     max-width: min(50%, 600px);
@@ -365,7 +384,7 @@ body {
 
 .media-box {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16 / 9;           /* perfect video shape */ 
     overflow: hidden;
     position: relative;
 }
@@ -379,7 +398,7 @@ body {
     padding-left: 20px;
 }
 
-/* LANGUAGE SECTION: IMAGE + TEXT BUBBLES */
+/* language section: image and text bubbles */
 .language-content {
     display: flex;
     flex-direction: column;
@@ -418,7 +437,7 @@ body {
     line-height: 1.5;
 }
 
-/* food */
+/* food page */
 .food-section {
     display: flex;
     flex-direction: column;
@@ -426,6 +445,7 @@ body {
     padding: 40px 20px;
 }
 
+/* each food block */
 .food-item {
     display: flex;
     align-items: center;
@@ -437,6 +457,7 @@ body {
     flex-direction: row-reverse;
 }
 
+/* images */
 .food-item img {
     width: 100%;
     max-width: 400px;
@@ -473,7 +494,7 @@ body {
     margin: 0;
 }
 
-/* Responsive */
+/* responsive layout for food */
 @media(max-width: 900px){
     .food-item {
         flex-direction: column !important;
@@ -486,9 +507,9 @@ body {
     }
 }
 
-/* culture */
+/* culture page*/
 
-/* Text Bubbles */
+/* bubble styling for list and paragraphs */
 .list, p {
     max-width: 800px;
     margin: 15px auto;
@@ -508,13 +529,13 @@ body {
     margin-bottom: 15px;
 }
 
-/* Keep bullets for holidays */
+/* keep bullets ONLY for holidays */
 .holidays ul {
     list-style: disc;
     padding-left: 40px;
 }
 
-/* Figures */
+/* festival photos */
 figure {
     max-width: 700px;
     margin: 20px auto;
@@ -535,7 +556,7 @@ figcaption {
     line-height: 1.4;
 }
 
-/* Video styling */
+/* culture video */
 video {
     display: block;
     margin: 20px auto;
@@ -543,14 +564,14 @@ video {
     max-width: 50%;
 }
 
-/* Section headers */
+/* headings */
 h2 {
     text-align: center;
     margin: 40px 0 20px;
     color: #06402B;
 }
 
-/* Responsive adjustments */
+/* responsive tweaks for culture page */
 @media(max-width: 900px) {
     .navbar ul {
         flex-direction: column;

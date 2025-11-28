@@ -1,7 +1,11 @@
 /* nav bar dropdown design */
 
-.dropdown-center {
-    margin: auto;
+.header-nav-container {
+    padding: 20px 0;
+}
+
+.navbar > div {
+    margin: 0 20px;
 }
 
 #home {
@@ -103,17 +107,11 @@ p, h1, h2, h3, h4, h5, h6, li {
     font-family: 'Quicksand', sans-serif;
 }
 
-/* footer */
-
-#footer-layout {
-    text-align: center;
-}
-
 /* contact page */
 
 .contact-us {
     text-align: center;
-    padding: 40px 0px 40px 0px;
+    padding: 40px 0 40px 0;
     width: 400px;
     margin: 0 auto;
 }
@@ -127,7 +125,7 @@ p, h1, h2, h3, h4, h5, h6, li {
 }
 
 .box {
-    margin: 10px 0px 20px 0px;
+    margin: 10px 0 20px 0;
     border: 1px solid black;
     border-radius: 5px;
     width: 270px;
@@ -141,7 +139,7 @@ p, h1, h2, h3, h4, h5, h6, li {
 /* Meet Our Group Section */
 .meet-our-group {
     text-align: center;
-    padding: 40px 0px 40px 0px;
+    padding: 40px 0 40px 0;
     margin: 0 auto;
 }
 
@@ -237,6 +235,22 @@ p, h1, h2, h3, h4, h5, h6, li {
 
 .member-button2:hover ~ .info .mistakes {
     opacity: 1;
+}
+
+/* footer */
+footer p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    border-top: 1px solid #000;
+    font-size: 14px;
+}
+
+footer a {
+    text-decoration: none;
 }
 
 @media (max-width: 900px) {

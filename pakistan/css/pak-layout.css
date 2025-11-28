@@ -22,21 +22,12 @@ body {
   margin: 0;              /* Removes spacing so slogan sits right under */
 }
 
-/* slogan stying */
-.slogan {
-  color: #06402B;               /* text color */
-  text-align: center;            /* centers the slogan */
-  font-weight: bold;              /* makes text bold */
-  font-style: italic;             /* makes text italic */
-  font-size: 22px;                /* makes text bigger */
-  margin: 0;                      /* removes spacing */
-}
-
 .header {
   display: flex;
   justify-content: space-between; /* title left, nav right */
   align-items: center;            /* keeps them on the same level */
   padding: 10px 20px;
+  padding-top: 25px;
 }
 
 .navbar ul {
@@ -55,4 +46,522 @@ body {
 
 .navbar a:hover {
   text-decoration: underline;
+  color: #ffd700; /* gold for hover */
+}
+
+.pak-introduction {
+  display: flex;            /* side-by-side layout */
+  gap: 20px;                /* space between columns */
+  align-items: flex-start;  /* align top of columns */
+  flex-wrap: wrap;          /* wrap on smaller screens */
+}
+
+.intro-text h2 {
+  margin-left: 0 0 10px 0;       /* removes default indent */
+  padding-left: 40px;
+  color:#06402B;
+}
+
+.intro-text {
+  flex: 1;                  /* take available space */
+}
+
+.intro-text ul {
+  list-style: none;               /* removes bullet points */
+}
+
+.border-pic {
+  flex: 1;                  /* take available space */
+  text-align: center;       /* center image and caption */
+}
+
+.border-pic img {
+  max-width: 100%;          /* responsive image */
+  height: auto;             /* maintain aspect ratio */
+  display: block;           /* remove inline spacing */
+  margin: 0 auto;           /* center horizontally */
+}
+
+.border-pic-caption {
+  margin-top: 8px;
+  font-style: italic;
+  color: black;
+  text-align: center;       /* makes caption perfectly centered */
+}
+
+.divider {
+  height: 1px;              /* thickness */
+  width: 100%;              /* full width */
+  background-color: #000;   /* line color */
+  margin: 30px 0;           /* spacing */
+}
+
+
+/* Main Page Section Cards */
+.pak-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.pak-card {
+    width: 45%;                   /* half width look */
+    max-width: 350px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image Styling */
+.pak-card img {
+    width: 100%;
+    height: 220px;           /* uniform height */
+    object-fit: cover;       /* crops the image so no empty space */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Caption under image */
+.pak-caption {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+/* Hover Effects */
+.pak-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 18px rgba(0,0,0,0.2);
+}
+
+.pak-card:hover img {
+    transform: scale(1.05);
+}
+
+/* footer styling */
+#footer-layout {
+  text-align: center;                /* centers footer content horizontally */
+  padding: 15px;                     /* vertical and horizontal padding */
+  font-family: Arial, sans-serif;    /* font */
+  font-size: 14px;                   /* small text size for footer */
+  color: black;                  /* text colour */
+}
+
+#footer-layout a {
+  text-decoration: none;             /* removes underline from links by default */
+  color: black;
+}
+
+/* hover effect on footer links */
+#footer-layout a:hover {
+  text-decoration: underline;        /* adds underline on hover */
+  color: #ffd700;
+}
+
+.footer-separator {
+  margin: 0 8px;                     /* adds horizontal spacing around seperator */
+  color: black;
+}
+
+/* facts page styling */
+
+.facts-titles {
+    padding-left: 30px;
+    color: #06402B;
+}
+
+/* GRID OF FACT CARDS */
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 24px;
+    width: 90%;
+    justify-self: center;
+}
+
+.fact-card {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #f7f7f7;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+    min-height: 130px;
+}
+
+.fact-card h3 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.fact-card p {
+    position: absolute;
+    inset: 0;                  /* makes the element occupy the whole block */
+    opacity: 0;                /* makes the element invisible */
+    margin: 0;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    transition: opacity 0.28s;
+    background: #fff;
+}
+
+.fact-card:hover p {
+    opacity: 1;
+}
+
+
+/* FACTS GALLERY */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.gallery-container figure {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    border: 1px solid #d0d0d0;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-container img,
+.gallery-container iframe {
+    border-radius: 8px;
+}
+
+.gallery-container p {
+    text-align: center;
+    padding: 0 18px;
+}
+
+.gallery-container figure:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-container figure img {
+    width: 100%;        /* makes all images fit the figure */
+    height: auto;       /* keeps aspect ratio */
+    display: block;
+}
+
+.gallery-container figure figcaption {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #333;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #d0d0d0;
+    border-radius: 0 0 10px 10px;
+}
+
+/* ADAPTIVITY */
+@media (max-width: 900px) {
+    .homepage-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-paragraphs {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .facts-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-container figure {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .aside-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aside-section aside {
+        width: 90%;
+        max-width: 90%;
+    }
+
+    .aside-text-container {
+        max-width: 90%;
+    }
+
+    .facts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fact-card h3 {
+        font-size: 1rem;
+    }
+}
+
+.list ul{
+    list-style: none;               /* removes bullet points */
+}
+/* national symols */
+
+/* ASIDE SECTIONS */
+/* General & Aside Section Text*/
+.aside-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.aside-text-container {
+    flex: 1;
+    max-width: min(50%, 600px);
+}
+
+.section-paragraphs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 18px;
+    gap: 10px;
+}
+
+.section-paragraphs p {
+    flex: 1 1;
+    margin: 0;
+    text-align: justify;
+    font-size: larger;
+}
+
+/* Aside elements*/
+.aside-section aside {
+    flex: 1;
+    max-width: min(50%, 600px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.media-box {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    position: relative;
+}
+
+.aside-section aside figure {
+    width: 100%;
+}
+
+.aside-section h2 {
+    color:#06402B;
+    padding-left: 20px;
+}
+
+/* LANGUAGE SECTION: IMAGE + TEXT BUBBLES */
+.language-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.language-content img {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.language-content .list {
+    width: 80%;
+    max-width: 600px;
+}
+
+.language-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* space between bubbles */
+}
+
+.language-content ul li {
+    background: #f7f7f7;         /* bubble background */
+    border-radius: 15px;          /* rounded bubble */
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    line-height: 1.5;
+}
+
+/* food */
+.food-section {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 40px 20px;
+}
+
+.food-item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.food-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.food-item img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.12);
+}
+
+.breakfast-img {
+    max-width: 250px;
+    max-height: 450px;
+}
+
+.food-bubble-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.food-bubble-text h2 {
+    margin: 0 0 10px 0;
+    text-align: left;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+.food-bubble-text p {
+    background: #e0e0e0;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive */
+@media(max-width: 900px){
+    .food-item {
+        flex-direction: column !important;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .bubble-text h2 {
+        text-align: center;
+    }
+}
+
+/* culture */
+
+/* Text Bubbles */
+.list, p {
+    max-width: 800px;
+    margin: 15px auto;
+}
+
+.list ul {
+    list-style: none; /* remove bullets */
+    padding-left: 0;
+}
+
+.list ul li, 
+.culture-section p {
+    background: #e0e0e0;
+    padding: 15px 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    margin-bottom: 15px;
+}
+
+/* Keep bullets for holidays */
+.holidays ul {
+    list-style: disc;
+    padding-left: 40px;
+}
+
+/* Figures */
+figure {
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    margin-bottom: 10px;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Video styling */
+video {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 50%;
+}
+
+/* Section headers */
+h2 {
+    text-align: center;
+    margin: 40px 0 20px;
+    color: #06402B;
+}
+
+/* Responsive adjustments */
+@media(max-width: 900px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .list ul li, p {
+        max-width: 95%;
+    }
+
+    figure img {
+        max-width: 90%;
+    }
 }

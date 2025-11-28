@@ -16,22 +16,6 @@
     border-bottom: 1px solid #d0d0d0;
 }
 
-.navbar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-.navbar li {
-    margin-left: 20px;
-}
-
-.navbar a {
-    font-weight: 600;
-    font-size: 14px;
-}
-
 .header-left-top {
     align-items: center;
     display: flex;
@@ -44,15 +28,6 @@
     padding: 20px 0;
 }
 
-.navbar ul li a, .navbar ul {
-    text-decoration: none;
-    list-style-type: none;
-    color: #ff2f00;
-}
-
-.navbar ul li a:hover {
-    text-decoration: underline;
-}
 
 #mainhmpg {
     text-decoration: none;
@@ -161,14 +136,6 @@
 
 /* Background Page */
 
-/* #background {
-    background-image: url("../images/pexels-markus-winkler.jpg");
-    background-position: center;  
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-} */
-
 .background_content {
     display: table-cell;
     grid-template-columns: 2fr 2fr 2fr;
@@ -206,13 +173,6 @@
     border-left: 5px solid #ff2f00;
 
 }
-/* #background_main {
-    background: linear-gradient(to right, rgb(240, 108, 93, 0.3), rgb(198, 223, 228, 0.6));
-    border-style: solid;
-    border-color: white;
-    border-radius: 10px;
-    padding: 2%; 
-} */
 
 .spotify {
     width: 600px;
@@ -220,22 +180,6 @@
 }
 
 /* Language Page */
-
-/*#lang_body {
-    background-image: url("../images/oriento-bAzDhilQFsA-unsplash.jpg");
-    background-position: center;  
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-#lang_main {
-    background: linear-gradient(to right, rgba(119, 58, 21, 0.3), rgb(198, 223, 228, 0.6));
-    border-style: solid;
-    border-color: white;
-    border-radius: 10px;
-    padding: 2%; 
-} */
 
 #lang_main h1 {
     font-size: 22px;
@@ -261,12 +205,6 @@
 
 .vowels_content {
     grid-area: vowels;
-}
-
-.lang_content p, .lang_content li {
-}
-
-#tones {
 }
 
 /* Food Page */
@@ -312,24 +250,8 @@
 
 /* Tradition Page */
 
-/*#tradition_body {
-    background-image: url("../images/freepik-chinese-new-year.jpg");
-    background-position: center;  
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-}
-
-#trad_main {
-    background: linear-gradient(to right, rgba(248, 248, 47, 0.2), rgb(198, 223, 228, 0.6));
-    border-style: solid;
-    border-color: white;
-    border-radius: 10px;
-    padding: 2%;
-} */
-
-.trad_content p, .trad_content li {
+.trad_content h1 {
+    border-left: 5px solid #ff2f00;
 }
 
 /* Footer */

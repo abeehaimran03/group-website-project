@@ -9,6 +9,94 @@
     color: white;
 }
 
+/* main home page */
+
+.international {
+    position: relative;
+    width: 100%;
+}
+
+.international-img {
+    height: auto;
+    width: 100%;
+    display: block;
+}
+
+.international-content {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.slogan {
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+.aim-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    width: 100%;
+}
+
+.aim-container img {
+    width: 700px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.aim-text, .aim-text li {
+    flex: 1;
+    list-style-type: none;
+    text-align: center;
+}
+
+.countries {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    transition: transform 0.3s ease;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.section-title a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
 /* font */
 
 p, h1, h2, h3, h4, h5, h6, li {
